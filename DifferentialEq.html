@@ -41,15 +41,248 @@
 			<h2>Options</h2>
 
 			<ul>
-				<li><strong>currentClass</strong>: Class to add to the nav to indicate the current item. Defaults to <em>current</em>.</li>
-				<li><strong>changeHash</strong>: Whether you want to change the hash when a user clicks on the nav. Defaults to <em>false</em>.</li>
-				<li><strong>scrollSpeed</strong>: Speed at which the page will scroll upon clicking on the nav. Defaults to <em>750</em>.</li>
-				<li><strong>scrollThreshold</strong>: Percentage of screen at which the next section should become current. Defaults to <em>0.5</em>.</li>
-				<li><strong>filter</strong>: Selector of links to filter out of one page nav functionality.</li>
-				<li><strong>easing</strong>: Easing method. Defaults to <em>swing</em>.</li>
-				<li><strong>begin</strong>: Function to call when the scrolling starts.</li>
-				<li><strong>end</strong>: Function to call when the scrolling ends.</li>
-				<li><strong>scrollChange</strong>: Function to call when you enter a section. The current nav item gets passed in.</li>
+				<style type="text/css">
+.tg  {border-collapse:collapse;border-spacing:0;}
+.tg td{font-family:Arial, sans-serif;font-size:14px;padding:10px 5px;border-style:solid;border-width:1px;overflow:hidden;word-break:normal;}
+.tg th{font-family:Arial, sans-serif;font-size:14px;font-weight:normal;padding:10px 5px;border-style:solid;border-width:1px;overflow:hidden;word-break:normal;}
+</style>
+<table class="tg">
+  <tr>
+    <th class="tg-031e">1.1</th>
+    <th class="tg-031e">12</th>
+    <th class="tg-031e">1, 3, 5, 7, 11, 17, 21, 25, 29, 32, 35, 37</th>
+  </tr>
+  <tr>
+    <td class="tg-031e">1.2</td>
+    <td class="tg-031e">11</td>
+    <td class="tg-031e">1, 5, 9, 13, 17, 21, 25, 35-38 all</td>
+  </tr>
+  <tr>
+    <td class="tg-031e">1.3</td>
+    <td class="tg-031e">10</td>
+    <td class="tg-031e">1, 5, 7, 9, 13, 15, 17, 21, 23, 27</td>
+  </tr>
+  <tr>
+    <td class="tg-031e"></td>
+    <td class="tg-031e">33</td>
+    <td class="tg-031e">Chapter 1 Total</td>
+  </tr>
+  <tr>
+    <td class="tg-031e">2.1</td>
+    <td class="tg-031e">9</td>
+    <td class="tg-031e">5, 7, 9, 13, 21, 23, 25, 27, 29</td>
+  </tr>
+  <tr>
+    <td class="tg-031e">2.2</td>
+    <td class="tg-031e">10</td>
+    <td class="tg-031e">1, 5, 7, 11, 17, 19, 23, 25, 29, 35</td>
+  </tr>
+  <tr>
+    <td class="tg-031e">2.3</td>
+    <td class="tg-031e">9</td>
+    <td class="tg-031e">1, 5, 9, 13, 17, 21, 25, 29, 33</td>
+  </tr>
+  <tr>
+    <td class="tg-031e">2.4</td>
+    <td class="tg-031e">12</td>
+    <td class="tg-031e">1, 5, 9, 13, 17, 21, 25, 27, 29, 31, 35, 37</td>
+  </tr>
+  <tr>
+    <td class="tg-031e">2.5</td>
+    <td class="tg-031e">11</td>
+    <td class="tg-031e">1, 5, 9, 11, 13, 15, 19, 21, 23, 25, 29</td>
+  </tr>
+  <tr>
+    <td class="tg-031e">2.6</td>
+    <td class="tg-031e">5</td>
+    <td class="tg-031e">1, 3, 5, 9, 11</td>
+  </tr>
+  <tr>
+    <td class="tg-031e"></td>
+    <td class="tg-031e">56</td>
+    <td class="tg-031e">Chapter 2 Total</td>
+  </tr>
+  <tr>
+    <td class="tg-031e">3.1</td>
+    <td class="tg-031e">9</td>
+    <td class="tg-031e">3, 11, 17, 19, 23, 31, 35, 39, 43</td>
+  </tr>
+  <tr>
+    <td class="tg-031e">3.2</td>
+    <td class="tg-031e">6</td>
+    <td class="tg-031e">1, 5, 9, 13, 19, 25</td>
+  </tr>
+  <tr>
+    <td class="tg-031e">3.3</td>
+    <td class="tg-031e">5</td>
+    <td class="tg-031e">5, 9, 11, 13, 15</td>
+  </tr>
+  <tr>
+    <td class="tg-031e"></td>
+    <td class="tg-031e">20</td>
+    <td class="tg-031e">Chapter 3 Total</td>
+  </tr>
+  <tr>
+    <td class="tg-031e">4.1</td>
+    <td class="tg-031e">11</td>
+    <td class="tg-031e">1, 3, 9, 13, 15, 19, 21, 25, 27, 31, 33</td>
+  </tr>
+  <tr>
+    <td class="tg-031e">4.2</td>
+    <td class="tg-031e">6</td>
+    <td class="tg-031e">1, 5, 9, 13, 17, 19</td>
+  </tr>
+  <tr>
+    <td class="tg-031e">4.3</td>
+    <td class="tg-031e">17</td>
+    <td class="tg-031e">1, 5, 9, 13, 17, 21, 25, 29, 33, 37, 41, 43-48 all</td>
+  </tr>
+  <tr>
+    <td class="tg-031e">4.4</td>
+    <td class="tg-031e">8</td>
+    <td class="tg-031e">3, 7, 13, 17, 23, 29, 35, 39</td>
+  </tr>
+  <tr>
+    <td class="tg-031e">4.5</td>
+    <td class="tg-031e">14</td>
+    <td class="tg-031e">3, 7, 13, 17, 23, 29, 33, 35, 43, 47, 55, 61, 67, 69</td>
+  </tr>
+  <tr>
+    <td class="tg-031e">4.6</td>
+    <td class="tg-031e">7</td>
+    <td class="tg-031e">1, 5, 9, 13, 17, 21, 25</td>
+  </tr>
+  <tr>
+    <td class="tg-031e">4.7</td>
+    <td class="tg-031e">8</td>
+    <td class="tg-031e">1, 7, 13, 19, 21, 27, 31, 35</td>
+  </tr>
+  <tr>
+    <td class="tg-031e">4.8</td>
+    <td class="tg-031e">6</td>
+    <td class="tg-031e">1, 5, 9, 13, 17, 21</td>
+  </tr>
+  <tr>
+    <td class="tg-031e">4.9</td>
+    <td class="tg-031e">6</td>
+    <td class="tg-031e">1, 3, 7, 11, 13, 15</td>
+  </tr>
+  <tr>
+    <td class="tg-031e"></td>
+    <td class="tg-031e">83</td>
+    <td class="tg-031e">Chapter 4 Total</td>
+  </tr>
+  <tr>
+    <td class="tg-031e">5.1</td>
+    <td class="tg-031e">9</td>
+    <td class="tg-031e">9, 11, 17-20 all; 25, 33, 49</td>
+  </tr>
+  <tr>
+    <td class="tg-031e">5.2</td>
+    <td class="tg-031e">9</td>
+    <td class="tg-031e">1, 3, 5, 9-19</td>
+  </tr>
+  <tr>
+    <td class="tg-031e">5.3</td>
+    <td class="tg-031e">4</td>
+    <td class="tg-031e">3, 9, 14, 15</td>
+  </tr>
+  <tr>
+    <td class="tg-031e"></td>
+    <td class="tg-031e">22</td>
+    <td class="tg-031e">Chapter 5 Total</td>
+  </tr>
+  <tr>
+    <td class="tg-031e">6.1</td>
+    <td class="tg-031e">8</td>
+    <td class="tg-031e">3, 11, 15, 17, 21, 25, 29, 33</td>
+  </tr>
+  <tr>
+    <td class="tg-031e">6.2</td>
+    <td class="tg-031e">10</td>
+    <td class="tg-031e">1, 5, 9, 11, 13, 15, 19, 23, 27, 31</td>
+  </tr>
+  <tr>
+    <td class="tg-031e">6.3</td>
+    <td class="tg-031e">8</td>
+    <td class="tg-031e">1, 5, 9, 13, 17, 25, 45, 47</td>
+  </tr>
+  <tr>
+    <td class="tg-031e"></td>
+    <td class="tg-031e">26</td>
+    <td class="tg-031e">Chapter 6 Total</td>
+  </tr>
+  <tr>
+    <td class="tg-031e">7.1</td>
+    <td class="tg-031e">8</td>
+    <td class="tg-031e">1, 7, 13, 21, 27, 31, 37, 41</td>
+  </tr>
+  <tr>
+    <td class="tg-031e">7.2</td>
+    <td class="tg-031e">8</td>
+    <td class="tg-031e">3, 11, 17, 23, 27, 33, 35, 39</td>
+  </tr>
+  <tr>
+    <td class="tg-031e">7.3</td>
+    <td class="tg-031e">19</td>
+    <td class="tg-031e">1, 5, 9, 13, 17, 21, 25, 29, 37, 41, 45, 49-54 all; 57, 67</td>
+  </tr>
+  <tr>
+    <td class="tg-031e">7.4</td>
+    <td class="tg-031e">12</td>
+    <td class="tg-031e">1, 5, 9, 13, 21, 25, 29, 33, 37, 41, 45, 49</td>
+  </tr>
+  <tr>
+    <td class="tg-031e">7.5</td>
+    <td class="tg-031e">4</td>
+    <td class="tg-031e">1, 3, 7, 11</td>
+  </tr>
+  <tr>
+    <td class="tg-031e">7.6</td>
+    <td class="tg-031e">4</td>
+    <td class="tg-031e">1, 5, 9, 15</td>
+  </tr>
+  <tr>
+    <td class="tg-031e"></td>
+    <td class="tg-031e">55</td>
+    <td class="tg-031e">Chapter 7 Total</td>
+  </tr>
+  <tr>
+    <td class="tg-031e">8.1</td>
+    <td class="tg-031e">5</td>
+    <td class="tg-031e">5, 9, 15, 19, 23</td>
+  </tr>
+  <tr>
+    <td class="tg-031e">8.2</td>
+    <td class="tg-031e">11</td>
+    <td class="tg-031e">1, 5, 9, 13, 19, 25, 29, 33, 37, 43, 45</td>
+  </tr>
+  <tr>
+    <td class="tg-031e">8.3</td>
+    <td class="tg-031e">8</td>
+    <td class="tg-031e">1, 5, 9, 13, 17, 21, 25, 29</td>
+  </tr>
+  <tr>
+    <td class="tg-031e">8.4</td>
+    <td class="tg-031e">6</td>
+    <td class="tg-031e">1, 5, 9, 15, 19, 23</td>
+  </tr>
+  <tr>
+    <td class="tg-031e"></td>
+    <td class="tg-031e">30</td>
+    <td class="tg-031e">Chapter 8 Total</td>
+  </tr>
+  <tr>
+    <td class="tg-031e">9.1</td>
+    <td class="tg-031e">3</td>
+    <td class="tg-031e">1,5,9</td>
+  </tr>
+  <tr>
+    <td class="tg-031e">9.2</td>
+    <td class="tg-031e">3</td>
+    <td class="tg-031e">3,7,11</td>
+  </tr>
+</table>
 			</ul>
 		</div>
 
